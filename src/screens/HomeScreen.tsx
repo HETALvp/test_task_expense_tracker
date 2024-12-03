@@ -147,7 +147,7 @@ const HomeScreen = () => {
             )}
           </TouchableOpacity>
         </View>
-
+        <Spacer height={HP(4)} />
         {Number(monthlyBudget) > 0 && (
           <FlatList
             data={Object.entries(categorySums)}
@@ -201,6 +201,18 @@ const styles = StyleSheet.create({
     padding: WP(4),
     borderRadius: 10,
     alignItems: 'center',
+    shadowOffset: {
+      width: 0,
+      height: 5,
+    },
+    shadowOpacity: 0.58,
+    shadowRadius: 16.0,
+    elevation: 24,
+    borderTopLeftRadius: 21,
+    borderTopRightRadius: 21,
+    width: '100%',
+
+    zIndex: 0,
   },
   budgetText: {
     fontSize: 12,
